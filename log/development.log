@@ -1441,3 +1441,1125 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 449ms (Views: 443.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2023-05-10 01:32:01 -0600
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered collection of messages/_message.html.erb [4 times] (189.7ms)
+  Rendered chatroom/index.html.erb within layouts/application (268.1ms)
+  Rendered layouts/_navigation.html.erb (2.1ms)
+  Rendered layouts/_messages.html.erb (2.5ms)
+Completed 200 OK in 4569ms (Views: 4495.7ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/login" for ::1 at 2023-05-10 01:32:09 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (84.9ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 667ms (Views: 658.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2023-05-10 01:32:18 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KMW2leyveuKB9gsTnzDzZ5JeC9vytcLGrYN70FofTHhHrPNhEvdMiQJ/VaGI71GzNsID/wo+2DalqmjsbJ4qQw==", "session"=>{"username"=>"Mauricio", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Mauricio"], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_navigation.html.erb (1.4ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 422 Unprocessable Entity in 1027ms (Views: 472.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/login" for ::1 at 2023-05-10 01:33:08 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (2.0ms)
+Completed 200 OK in 507ms (Views: 500.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2023-05-10 01:33:13 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hDrNIgPSM7J9+6KyNGyb++Giu3CSi1RNfXCepWqDdvS3++3ZjXrY6SpmKgYXX1nYCBIEVEMwKilkB9Y/uzc0Zg==", "session"=>{"username"=>"asdfasdf", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "asdfasdf"], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 422 Unprocessable Entity in 471ms (Views: 461.1ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/login" for ::1 at 2023-05-10 01:33:35 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DjXtUUNSFWnl7R0sxM+go6ixlSrYocEc36/nyQsKiCk99M2qzfr+MrJwlZjn/GKAQQEqDgkav3jG2K9T2r7Kuw==", "session"=>{"username"=>"asdfasdf", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "asdfasdf"], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 422 Unprocessable Entity in 437ms (Views: 432.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for ::1 at 2023-05-10 01:35:19 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_navigation.html.erb (1.5ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 581ms (Views: 575.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2023-05-10 01:35:22 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 487ms (Views: 479.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2023-05-10 01:36:07 -0600
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered collection of messages/_message.html.erb [4 times] (20.2ms)
+  Rendered chatroom/index.html.erb within layouts/application (35.7ms)
+  Rendered layouts/_navigation.html.erb (1.4ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 501ms (Views: 483.4ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for ::1 at 2023-05-10 01:36:26 -0600
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered collection of messages/_message.html.erb [4 times] (14.2ms)
+  Rendered chatroom/index.html.erb within layouts/application (30.2ms)
+  Rendered layouts/_navigation.html.erb (1.4ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 628ms (Views: 599.0ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/login" for ::1 at 2023-05-10 01:37:12 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_navigation.html.erb (1.4ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 515ms (Views: 508.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2023-05-10 01:37:17 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iIzd3Ly/vALL5tza+BQmALgfwk2F3HzMnSI06YI84d7n5ZgoQueKaUhvgmjvy4TUHIPKaX1XZjyVCyfVtL2H5Q==", "session"=>{"username"=>"Mauricio", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Mauricio"], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 422 Unprocessable Entity in 1063ms (Views: 499.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/login" for ::1 at 2023-05-10 01:37:47 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T2uE3ZdjslQ6PomC9WnvBDQZoMfNKk7t0aZGsQnuLq98qqQmGctZD22jATbWWi0n3akf4xyRMInI0Q4r2FpsPQ==", "session"=>{"username"=>"Mauricio", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Mauricio"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 562ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2023-05-10 01:37:48 -0600
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered collection of messages/_message.html.erb [4 times] (19.9ms)
+  Rendered chatroom/index.html.erb within layouts/application (35.3ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navigation.html.erb (3.6ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 518ms (Views: 484.6ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/" for ::1 at 2023-05-10 01:38:38 -0600
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered collection of messages/_message.html.erb [4 times] (16.8ms)
+  Rendered chatroom/index.html.erb within layouts/application (31.0ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navigation.html.erb (3.3ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 880ms (Views: 868.4ms | ActiveRecord: 3.7ms)
+
+
+Started DELETE "/logout" for ::1 at 2023-05-10 01:38:42 -0600
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/3DP0IHoB1+yb1booDfgJoRuQvcc0sZRmSwJ3+WUWTjMse8rD0DsBOXy3lyDBCIFbd79081puDWAW0FFNCAbqg=="}
+Redirected to http://localhost:3000/login
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2023-05-10 01:38:42 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 492ms (Views: 484.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2023-05-10 01:38:50 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_navigation.html.erb (1.8ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 944ms (Views: 937.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2023-05-10 01:38:52 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 486ms (Views: 479.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2023-05-10 01:38:56 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pvBZoadOqpIwX929rXBo0lw2NSyCd3zFmAXOqEJqwAyVMXlaKeZByWfCVQmOQ6rxtYaKCFPMAqGBcoYyk96Cng==", "session"=>{"username"=>"Mauricio", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Mauricio"], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 422 Unprocessable Entity in 1237ms (Views: 511.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/login" for ::1 at 2023-05-10 01:39:06 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 726ms (Views: 719.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2023-05-10 01:39:12 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tGNCGYEdQ01V1T3ZTQK997xWtzOuIUmcEzEUGbuHDxSHomLiD7WoFgJItW1uMX/UVeYIF3+aN/gKRlyDajNNhg==", "session"=>{"username"=>"Mauricio", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Mauricio"], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_navigation.html.erb (1.7ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 422 Unprocessable Entity in 1017ms (Views: 444.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for ::1 at 2023-05-10 01:39:21 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_navigation.html.erb (6.8ms)
+  Rendered layouts/_messages.html.erb (1.5ms)
+Completed 200 OK in 489ms (Views: 482.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2023-05-10 01:39:32 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xQbc6s0h9a39+nM69t/tu6M4H/8Ubz8nbeRe8hpuYuiqb5keM3nDxn5zLYjhAE9vB6QX2+zkJddlzU3OLO8E0w==", "session"=>{"username"=>"Mauricio", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Mauricio"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 586ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2023-05-10 01:39:32 -0600
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered collection of messages/_message.html.erb [4 times] (17.1ms)
+  Rendered chatroom/index.html.erb within layouts/application (30.3ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navigation.html.erb (3.1ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 481ms (Views: 471.6ms | ActiveRecord: 3.2ms)
+
+
+Started DELETE "/logout" for ::1 at 2023-05-10 01:39:42 -0600
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iSOb706RKETmXRikP3OagEQsL3PZXtwX2HQvPOmmWv264rsUwDnDH7HAkBAcQFijrZyQVwjlonPBA2emOBIYbw=="}
+Redirected to http://localhost:3000/login
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2023-05-10 01:39:42 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 546ms (Views: 529.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2023-05-10 01:41:05 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 460ms (Views: 452.4ms)
+
+
+Started POST "/login" for ::1 at 2023-05-10 01:41:12 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uj8zP3bXfeOLU7dHjA2ccvLXR53xUqktZeOScU5U1duJ/hPE+H+WuNzOP/OvPl5RG2f4uSDp10l8lNrrn+CXSQ==", "session"=>{"username"=>"Mauricio", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Mauricio"], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 422 Unprocessable Entity in 1123ms (Views: 459.3ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/login" for ::1 at 2023-05-10 01:41:20 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (31.5ms)
+  Rendered layouts/_navigation.html.erb (1.4ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 567ms (Views: 561.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2023-05-10 01:41:27 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1AWf0OnMcYyr3SjBsQoMqGzT8U5jFdTCXT9saMharnu7bNokF5RH5yhUdnOm1a58yE/5apuezjJVFn9U/tvIQA==", "session"=>{"username"=>"Mauricio", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Mauricio"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 571ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2023-05-10 01:41:28 -0600
+Processing by ChatroomController#index as HTML
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered collection of messages/_message.html.erb [4 times] (24.3ms)
+  Rendered chatroom/index.html.erb within layouts/application (55.5ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navigation.html.erb (4.2ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 571ms (Views: 478.1ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/" for ::1 at 2023-05-10 01:42:46 -0600
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered collection of messages/_message.html.erb [4 times] (21.2ms)
+  Rendered chatroom/index.html.erb within layouts/application (49.8ms)
+  Rendered layouts/_navigation.html.erb (1.4ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 574ms (Views: 507.9ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/" for ::1 at 2023-05-10 01:43:37 -0600
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered collection of messages/_message.html.erb [4 times] (21.2ms)
+  Rendered chatroom/index.html.erb within layouts/application (50.0ms)
+  Rendered layouts/_navigation.html.erb (1.4ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 578ms (Views: 510.1ms | ActiveRecord: 9.0ms)
+
+
+Started DELETE "/logout" for ::1 at 2023-05-10 01:43:40 -0600
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8H7aM8fF1qbOMpIgR/gNhFd3q8aMlbuD2OrPdVwJNwfDv/rISW09/ZmvGpRky8+nvscU4l0uxefBnYfvjb11lQ=="}
+Redirected to http://localhost:3000/login
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2023-05-10 01:43:40 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 473ms (Views: 465.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2023-05-10 01:43:44 -0600
+Processing by ChatroomController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :require_user rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2023-05-10 01:43:44 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_navigation.html.erb (1.4ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 507ms (Views: 501.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2023-05-10 01:43:46 -0600
+Processing by ChatroomController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :require_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2023-05-10 01:43:47 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navigation.html.erb (1.4ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 433ms (Views: 425.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2023-05-10 01:43:55 -0600
+Processing by ChatroomController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :require_user rendered or redirected
+Completed 302 Found in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2023-05-10 01:43:56 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navigation.html.erb (1.9ms)
+  Rendered layouts/_messages.html.erb (1.3ms)
+Completed 200 OK in 612ms (Views: 605.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2023-05-10 01:46:34 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Wzj9HqJ/jhIF0okYzP3V60gisk+0Tb4CV0gxuBoACpI0UbjqXCe4eYZb16rbInc/7L66a0zGpPJfYSKELIFsqQ==", "session"=>{"username"=>"Mauricio", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Mauricio"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 585ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/" for ::1 at 2023-05-10 01:46:35 -0600
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (1.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered collection of messages/_message.html.erb [4 times] (36.5ms)
+  Rendered chatroom/index.html.erb within layouts/application (72.3ms)
+  Rendered layouts/_navigation.html.erb (1.5ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 560ms (Views: 512.4ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/" for ::1 at 2023-05-10 01:46:50 -0600
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered collection of messages/_message.html.erb [4 times] (12.2ms)
+  Rendered chatroom/index.html.erb within layouts/application (23.7ms)
+  Rendered layouts/_navigation.html.erb (1.4ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 483ms (Views: 466.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/login" for ::1 at 2023-05-10 01:46:58 -0600
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :logged_in_redirect rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2023-05-10 01:46:58 -0600
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered collection of messages/_message.html.erb [4 times] (14.2ms)
+  Rendered chatroom/index.html.erb within layouts/application (26.6ms)
+  Rendered layouts/_navigation.html.erb (1.4ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 473ms (Views: 462.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for ::1 at 2023-05-10 01:54:41 -0600
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered collection of messages/_message.html.erb [4 times] (23.2ms)
+  Rendered chatroom/index.html.erb within layouts/application (78.2ms)
+Completed 500 Internal Server Error in 162ms (ActiveRecord: 8.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `html' for "<i class=\"bordered inverted orange edit icon\"></i>":String):
+    28:                     <div class="field">
+    29:                         <div class="ui fluid icon input">
+    30:                             <%= f.text_field :body%>
+    31:                             <%= f.button '<i class="bordered inverted orange edit icon"></i>'.html.safe  %> 
+    32:                         </div>
+    33:                     </div>
+    34:                 <% end %>
+  
+app/views/chatroom/index.html.erb:31:in `block in _app_views_chatroom_index_html_erb__715773634_22580'
+app/views/chatroom/index.html.erb:27:in `_app_views_chatroom_index_html_erb__715773634_22580'
+Started GET "/" for ::1 at 2023-05-10 01:55:04 -0600
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered collection of messages/_message.html.erb [4 times] (17.8ms)
+  Rendered chatroom/index.html.erb within layouts/application (35.1ms)
+  Rendered layouts/_navigation.html.erb (1.6ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 595ms (Views: 575.4ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/message" for ::1 at 2023-05-10 01:55:09 -0600
+  
+ActionController::RoutingError (uninitialized constant MessagesController):
+  
+activesupport (5.1.7) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.7) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.7) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.7) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.7) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.7) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.7) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.2.7) lib/rack/etag.rb:27:in `call'
+rack (2.2.7) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.7) lib/rack/head.rb:12:in `call'
+rack (2.2.7) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.7) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.7) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.7) lib/rack/method_override.rb:24:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/message" for ::1 at 2023-05-10 01:55:31 -0600
+  
+ActionController::RoutingError (uninitialized constant MessagesController):
+  
+activesupport (5.1.7) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.7) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.7) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.7) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.7) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.7) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.7) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.2.7) lib/rack/etag.rb:27:in `call'
+rack (2.2.7) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.7) lib/rack/head.rb:12:in `call'
+rack (2.2.7) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.7) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.7) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.7) lib/rack/method_override.rb:24:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2023-05-10 02:01:28 -0600
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered chatroom/index.html.erb within layouts/application (57.9ms)
+Completed 500 Internal Server Error in 218ms (ActiveRecord: 6.6ms)
+
+
+  
+ActionView::Template::Error (Missing partial messages/_message with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/sarat/message_me/app/views"
+  * "C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/semantic-ui-sass-2.4.4.0/app/views"
+):
+    11:             <div class="content">
+    12:                 <div class="ui feed">
+    13:                     <% if @messages.any?%>
+    14:                         <%= render @messages %>
+    15:                     <%else%>
+    16:                         <div class="event">
+    17:                             <div class="content">
+  
+app/views/chatroom/index.html.erb:14:in `_app_views_chatroom_index_html_erb__665052215_12000'
+Started GET "/" for ::1 at 2023-05-10 02:04:17 -0600
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered collection of messages/_message.html.erb [4 times] (67.7ms)
+  Rendered chatroom/index.html.erb within layouts/application (131.2ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 3117ms (Views: 3103.2ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for ::1 at 2023-05-10 02:05:07 -0600
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (1.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered collection of messages/_message.html.erb [4 times] (24.6ms)
+  Rendered chatroom/index.html.erb within layouts/application (60.4ms)
+  Rendered layouts/_navigation.html.erb (1.7ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 723ms (Views: 625.3ms | ActiveRecord: 11.3ms)
+
+
+Started POST "/message" for ::1 at 2023-05-10 02:05:30 -0600
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ux7ZJ00zqtUgHtgHGZ0MpOn1fUAwdNOLu3YWYuQMWKyI3/ncw5tBjneDULM6rs6HAEXCZOHPre+iAV74NbgaPg==", "body"=>"This is a test message", "button"=>""}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 400 Bad Request in 58ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: message):
+  
+app/controllers/messages_controller.rb:12:in `message_params'
+app/controllers/messages_controller.rb:4:in `create'
+Started DELETE "/logout" for ::1 at 2023-05-10 02:08:40 -0600
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ux7ZJ00zqtUgHtgHGZ0MpOn1fUAwdNOLu3YWYuQMWKyI3/ncw5tBjneDULM6rs6HAEXCZOHPre+iAV74NbgaPg=="}
+Redirected to http://localhost:3000/login
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2023-05-10 02:08:41 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (19.9ms)
+  Rendered layouts/_navigation.html.erb (1.9ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 588ms (Views: 580.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2023-05-10 02:08:49 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BL5kYWSplMUjd2LZv6thjfbz3p9u3VF3u7oLpEl2SUY3f0Sa6gF/nnTq6m2cmKOuH0Nhu79mLxOizUM+mMIL1A==", "session"=>{"username"=>"Mauricio", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Mauricio"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 557ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2023-05-10 02:08:50 -0600
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered collection of messages/_message.html.erb [4 times] (14.0ms)
+  Rendered chatroom/index.html.erb within layouts/application (30.2ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 465ms (Views: 451.0ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/message" for ::1 at 2023-05-10 02:08:54 -0600
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZeJkGAjjIyn7IX4nMaW/LzG0HCwf4Se3CR9CUB8s9rBWI0TjhkvIcqy89pMSln0M2ASjCM5aWdMQaArKzpi0Ig==", "body"=>"This is a test message", "button"=>""}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 400 Bad Request in 5ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: message):
+  
+app/controllers/messages_controller.rb:12:in `message_params'
+app/controllers/messages_controller.rb:4:in `create'
+Started POST "/message" for ::1 at 2023-05-10 02:13:06 -0600
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZeJkGAjjIyn7IX4nMaW/LzG0HCwf4Se3CR9CUB8s9rBWI0TjhkvIcqy89pMSln0M2ASjCM5aWdMQaArKzpi0Ig==", "body"=>"This is a test message", "button"=>""}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 400 Bad Request in 64ms (ActiveRecord: 3.1ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: message):
+  
+app/controllers/messages_controller.rb:12:in `message_params'
+app/controllers/messages_controller.rb:4:in `create'
+Started POST "/message" for ::1 at 2023-05-10 02:13:11 -0600
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZeJkGAjjIyn7IX4nMaW/LzG0HCwf4Se3CR9CUB8s9rBWI0TjhkvIcqy89pMSln0M2ASjCM5aWdMQaArKzpi0Ig==", "body"=>"This is a test message", "button"=>""}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 400 Bad Request in 5ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: message):
+  
+app/controllers/messages_controller.rb:12:in `message_params'
+app/controllers/messages_controller.rb:4:in `create'
+Started POST "/message" for ::1 at 2023-05-10 02:14:39 -0600
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZeJkGAjjIyn7IX4nMaW/LzG0HCwf4Se3CR9CUB8s9rBWI0TjhkvIcqy89pMSln0M2ASjCM5aWdMQaArKzpi0Ig==", "body"=>"This is a test message", "button"=>""}
+  [1m[36mUser Load (5.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 400 Bad Request in 10ms (ActiveRecord: 5.1ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: message):
+  
+app/controllers/messages_controller.rb:12:in `message_params'
+app/controllers/messages_controller.rb:4:in `create'
+Started POST "/message" for ::1 at 2023-05-10 02:14:46 -0600
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZeJkGAjjIyn7IX4nMaW/LzG0HCwf4Se3CR9CUB8s9rBWI0TjhkvIcqy89pMSln0M2ASjCM5aWdMQaArKzpi0Ig==", "body"=>"This is a test message", "button"=>""}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 400 Bad Request in 5ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: message):
+  
+app/controllers/messages_controller.rb:12:in `message_params'
+app/controllers/messages_controller.rb:4:in `create'
+Started POST "/message" for ::1 at 2023-05-10 02:15:29 -0600
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZeJkGAjjIyn7IX4nMaW/LzG0HCwf4Se3CR9CUB8s9rBWI0TjhkvIcqy89pMSln0M2ASjCM5aWdMQaArKzpi0Ig==", "body"=>"This is a test message", "button"=>""}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 400 Bad Request in 6ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: message):
+  
+app/controllers/messages_controller.rb:12:in `message_params'
+app/controllers/messages_controller.rb:4:in `create'
+Started POST "/message" for ::1 at 2023-05-10 02:15:36 -0600
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZeJkGAjjIyn7IX4nMaW/LzG0HCwf4Se3CR9CUB8s9rBWI0TjhkvIcqy89pMSln0M2ASjCM5aWdMQaArKzpi0Ig==", "body"=>"This is a test message", "button"=>""}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 400 Bad Request in 5ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: message):
+  
+app/controllers/messages_controller.rb:12:in `message_params'
+app/controllers/messages_controller.rb:4:in `create'
+Started POST "/message" for ::1 at 2023-05-10 02:18:51 -0600
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZeJkGAjjIyn7IX4nMaW/LzG0HCwf4Se3CR9CUB8s9rBWI0TjhkvIcqy89pMSln0M2ASjCM5aWdMQaArKzpi0Ig==", "body"=>"This is a test message", "button"=>""}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 400 Bad Request in 52ms (ActiveRecord: 4.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: message):
+  
+app/controllers/messages_controller.rb:13:in `message_params'
+app/controllers/messages_controller.rb:5:in `create'
+Started POST "/message" for ::1 at 2023-05-10 02:18:54 -0600
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZeJkGAjjIyn7IX4nMaW/LzG0HCwf4Se3CR9CUB8s9rBWI0TjhkvIcqy89pMSln0M2ASjCM5aWdMQaArKzpi0Ig==", "body"=>"This is a test message", "button"=>""}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 400 Bad Request in 5ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: message):
+  
+app/controllers/messages_controller.rb:13:in `message_params'
+app/controllers/messages_controller.rb:5:in `create'
+Started POST "/message" for ::1 at 2023-05-10 02:18:57 -0600
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZeJkGAjjIyn7IX4nMaW/LzG0HCwf4Se3CR9CUB8s9rBWI0TjhkvIcqy89pMSln0M2ASjCM5aWdMQaArKzpi0Ig==", "body"=>"This is a test message", "button"=>""}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 400 Bad Request in 5ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: message):
+  
+app/controllers/messages_controller.rb:13:in `message_params'
+app/controllers/messages_controller.rb:5:in `create'
+Started POST "/message" for ::1 at 2023-05-10 02:19:03 -0600
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZeJkGAjjIyn7IX4nMaW/LzG0HCwf4Se3CR9CUB8s9rBWI0TjhkvIcqy89pMSln0M2ASjCM5aWdMQaArKzpi0Ig==", "body"=>"This is a test message", "button"=>""}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 400 Bad Request in 5ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: message):
+  
+app/controllers/messages_controller.rb:13:in `message_params'
+app/controllers/messages_controller.rb:5:in `create'
+Started POST "/message" for ::1 at 2023-05-10 02:20:12 -0600
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZeJkGAjjIyn7IX4nMaW/LzG0HCwf4Se3CR9CUB8s9rBWI0TjhkvIcqy89pMSln0M2ASjCM5aWdMQaArKzpi0Ig==", "body"=>"This is a test message", "button"=>""}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 400 Bad Request in 5ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: message):
+  
+app/controllers/messages_controller.rb:13:in `message_params'
+app/controllers/messages_controller.rb:5:in `create'
+Started POST "/message" for ::1 at 2023-05-10 02:20:16 -0600
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZeJkGAjjIyn7IX4nMaW/LzG0HCwf4Se3CR9CUB8s9rBWI0TjhkvIcqy89pMSln0M2ASjCM5aWdMQaArKzpi0Ig==", "body"=>"This is a test message", "button"=>""}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 400 Bad Request in 4ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: message):
+  
+app/controllers/messages_controller.rb:13:in `message_params'
+app/controllers/messages_controller.rb:5:in `create'
+Started POST "/message" for ::1 at 2023-05-10 02:22:57 -0600
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZeJkGAjjIyn7IX4nMaW/LzG0HCwf4Se3CR9CUB8s9rBWI0TjhkvIcqy89pMSln0M2ASjCM5aWdMQaArKzpi0Ig==", "body"=>"This is a test message", "button"=>""}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 400 Bad Request in 5ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: message):
+  
+app/controllers/messages_controller.rb:13:in `message_params'
+app/controllers/messages_controller.rb:5:in `create'
+Started POST "/message" for ::1 at 2023-05-10 02:24:05 -0600
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZeJkGAjjIyn7IX4nMaW/LzG0HCwf4Se3CR9CUB8s9rBWI0TjhkvIcqy89pMSln0M2ASjCM5aWdMQaArKzpi0Ig==", "body"=>"This is a test message", "button"=>""}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Started GET "/" for ::1 at 2023-05-10 02:27:18 -0600
+Completed 400 Bad Request in 192481ms (ActiveRecord: 4.7ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: message):
+  
+app/controllers/messages_controller.rb:14:in `message_params'
+app/controllers/messages_controller.rb:6:in `create'
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered collection of messages/_message.html.erb [4 times] (24.0ms)
+  Rendered chatroom/index.html.erb within layouts/application (65.5ms)
+Completed 500 Internal Server Error in 159ms (ActiveRecord: 10.2ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    24:                 </div>
+    25:             </div>
+    26:             <div class="extra content">
+    27:                <%= form_with(@message, class: "ui reply form", url: message_path, remote: true) do |f| %>
+    28:                     <div class="field">
+    29:                         <div class="ui fluid icon input">
+    30:                         <%= f.text_field :body %>
+  
+app/views/chatroom/index.html.erb:27:in `_app_views_chatroom_index_html_erb__665052215_27480'
+Started GET "/" for ::1 at 2023-05-10 02:27:26 -0600
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered collection of messages/_message.html.erb [4 times] (15.3ms)
+  Rendered chatroom/index.html.erb within layouts/application (36.8ms)
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 3.6ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    24:                 </div>
+    25:             </div>
+    26:             <div class="extra content">
+    27:                <%= form_with(@message, class: "ui reply form", url: message_path, remote: true) do |f| %>
+    28:                     <div class="field">
+    29:                         <div class="ui fluid icon input">
+    30:                         <%= f.text_field :body %>
+  
+app/views/chatroom/index.html.erb:27:in `_app_views_chatroom_index_html_erb__665052215_27880'
+Started GET "/login" for ::1 at 2023-05-10 02:27:28 -0600
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :logged_in_redirect rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2023-05-10 02:27:36 -0600
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered collection of messages/_message.html.erb [4 times] (13.0ms)
+  Rendered chatroom/index.html.erb within layouts/application (32.5ms)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 2.6ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    24:                 </div>
+    25:             </div>
+    26:             <div class="extra content">
+    27:                <%= form_with(@message, class: "ui reply form", url: message_path, remote: true) do |f| %>
+    28:                     <div class="field">
+    29:                         <div class="ui fluid icon input">
+    30:                         <%= f.text_field :body %>
+  
+app/views/chatroom/index.html.erb:27:in `_app_views_chatroom_index_html_erb__665052215_28460'
+Started GET "/" for ::1 at 2023-05-10 02:29:20 -0600
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (1.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered collection of messages/_message.html.erb [4 times] (19.5ms)
+  Rendered chatroom/index.html.erb within layouts/application (38.9ms)
+  Rendered layouts/_navigation.html.erb (1.4ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 514ms (Views: 494.6ms | ActiveRecord: 3.8ms)
+
+
+Started POST "/message" for ::1 at 2023-05-10 02:29:26 -0600
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"18tppdiU3FW/fUWcdKsbpJ9Dnx7F2jmo66mT7d4GB1TkCkleVjw3DujgzShXmNmHdvMgOhRhR8zy3tt3D7JFxg==", "body"=>"This is a test message", "button"=>""}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  [1m[32mINSERT INTO "messages" ("body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "This is a test message"], ["user_id", 2], ["created_at", "2023-05-10 08:29:26.756167"], ["updated_at", "2023-05-10 08:29:26.756167"]]
+  [1m[35m (6.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 32ms (ActiveRecord: 11.2ms)
+
+
+Started GET "/" for ::1 at 2023-05-10 02:29:26 -0600
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered collection of messages/_message.html.erb [5 times] (20.0ms)
+  Rendered chatroom/index.html.erb within layouts/application (38.9ms)
+  Rendered layouts/_navigation.html.erb (1.6ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 504ms (Views: 490.9ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/message" for ::1 at 2023-05-10 02:30:08 -0600
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kT39kb05Vt26J21A18zCiVESfItTZlJYrKf5YHcUt76i/N1qM5G9hu265fT0/wCquKLDr4LdLDy10LH6pqD1LA==", "body"=>"This is a test message", "button"=>""}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.2ms)[0m  [1m[32mINSERT INTO "messages" ("body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "This is a test message"], ["user_id", 2], ["created_at", "2023-05-10 08:30:09.250468"], ["updated_at", "2023-05-10 08:30:09.250468"]]
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 89ms (ActiveRecord: 16.5ms)
+
+
+Started GET "/" for ::1 at 2023-05-10 02:30:09 -0600
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered collection of messages/_message.html.erb [6 times] (21.8ms)
+  Rendered chatroom/index.html.erb within layouts/application (37.5ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 500ms (Views: 483.5ms | ActiveRecord: 3.4ms)
+
+
