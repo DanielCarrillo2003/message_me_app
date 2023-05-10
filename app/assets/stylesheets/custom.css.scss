@@ -19,3 +19,14 @@ body {
 #login {
   margin-top: 50px;
 }
+
+#messages {
+  overflow: auto;
+  height: 15em;
+}
+
+.input {
+  button {
+    display: none;
+  }
+}
