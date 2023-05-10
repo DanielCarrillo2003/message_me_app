@@ -152,3 +152,32 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 120ms (Views: 105.5ms)
 
 
+Started GET "/login" for ::1 at 2023-05-09 22:06:38 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 318ms
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: semantic-ui.
+Load paths:
+  C:/Users/sarat/message_me/app/assets/config
+  C:/Users/sarat/message_me/app/assets/images
+  C:/Users/sarat/message_me/app/assets/javascripts
+  C:/Users/sarat/message_me/app/assets/stylesheets
+  C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/actioncable-5.1.7/lib/assets/compiled
+  C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/actionview-5.1.7/lib/assets/compiled
+  C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  C:/Users/sarat/message_me/node_modules):
+    4:     <title>MessageMe</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/custom.css.scss:1
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__18285996_12860'
